@@ -1,4 +1,4 @@
-function [res,f_vec] = fista_Gen_tikh_nuisance_v2(A,D,b,u,alpha,lambda,options)
+function [res,f_vec] = fista_Gen_tikh_weighted(A,D,b,u,alpha,lambda,options)
 %This function solves the Generalized Tikhonov Minimization Problem
 
 %           min_x 1/2 ||R(Ax-b)||_2^2+alpha/2 ||Dx||_2^2
