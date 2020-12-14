@@ -1,4 +1,4 @@
-function out = Joint_Recon_Model_Error_Param2(setup)
+function out = Model_Discrepency_Method(setup)
 %This function solves the joint-reconstruction problem with modelling
 %errors using algorithm 5 from the thesis. The method is akin to the one
 %proposed by Nicolai in his paper only for other types of modelling error.
