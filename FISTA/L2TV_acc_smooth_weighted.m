@@ -1,4 +1,4 @@
-function [x,f_vec] = L2TV_acc_smooth_nuisance_v2(A,b,u,alpha,lambda,options)
+function [x,f_vec] = L2TV_acc_smooth_weighted(A,b,u,alpha,lambda,options)
 
 %This function solves a smooth approximation to the TV regularized problem
 
