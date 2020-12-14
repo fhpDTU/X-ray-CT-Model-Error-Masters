@@ -1,4 +1,4 @@
-function res = Additive_Modelling_Error_Wrap_Param2(setup)
+function res = Model_Discrepency_Method_Wrap(setup)
 %This function solves the joint-reconstruction problem with modelling
 %errors using algorithm 5 from the thesis. The method is akin to the one
 %proposed by Nicolai in his paper only for other types of modelling error.
@@ -74,7 +74,7 @@ x_initial_recon = MAP_recon(A,b,alpha_ini,zeros(N^2,1),reg_term,maxiters_ini,non
 setup.x_ini = x_initial_recon;
 
 %Do joint reconstruction
-out = Joint_Recon_Model_Error_Param2(setup);
+out = Model_Discrepency_Method(setup);
 
 %Compute reconstruction with true model parameters
 A_true = Build_Forward_Operator(ray_config,vol_geom,gpu,angles,p,dx_true,dy_true,sx_true,sy_true,detector_width);
