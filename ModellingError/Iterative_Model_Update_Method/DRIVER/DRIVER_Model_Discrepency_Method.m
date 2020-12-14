@@ -65,6 +65,6 @@ foldername = 'dx_dy_sx_sy_512_regTest';
 folder_dir = fullfile('/zhome','94','f','108663','Desktop','Masters','Data','Model_Discrepency','Fanbeam',foldername);
 mkdir(folder_dir);
 
-res = Additive_Modelling_Error_Wrap_Param2(setup);
+res = Model_Discrepency_Method_Wrap(setup);
 f = fullfile(folder_dir,'TV_nonneg_001.mat');
 save(f,'res')
