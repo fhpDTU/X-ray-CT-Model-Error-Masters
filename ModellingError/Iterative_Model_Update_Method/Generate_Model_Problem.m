@@ -1,4 +1,4 @@
-function [A,b] = Generate_Model_Problem_Param2(ray_config,N,x,theta,p,gpu,sino,dx,dy,sx,sy,detector_width)
+function [A,b] = Generate_Model_Problem(ray_config,N,x,theta,p,gpu,sino,dx,dy,sx,sy,detector_width)
 
 %This function sets up the system matrix and data for the modelling error
 %problem
