@@ -460,7 +460,7 @@ if strcmp(reg_term,'TV')
     %Solve smooth TV problem using FISTA
     options.x0 = x0;
     options.maxiters = maxiters;
-    x = L2TV_acc_smooth_nuisance_v2(A,b_tilde,u_mat,alpha,lambda,options);
+    x = L2TV_acc_smooth_weighted(A,b_tilde,u_mat,alpha,lambda,options);
     N = sqrt(length(x0));
         
     if fig_show == 1
@@ -476,7 +476,7 @@ else
     reg_param = alpha*lambda*h^2;
     N = sqrt(length(x0));
     D = options.D;
-    x = fista_Gen_tikh_nuisance_v2(A,D,b_tilde,u_mat,reg_param,lambda,options);
+    x = fista_Gen_tikh_weighted(A,D,b_tilde,u_mat,reg_param,lambda,options);
         
     if fig_show == 1
         figure
